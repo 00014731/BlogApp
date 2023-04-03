@@ -6,7 +6,7 @@ This is a blog application that allows users to create, read, update, and delete
 1.Download the source code
 
 ```bash
-git clone [url to the github repo]
+git clone https://github.com/00014731/BlogApp.git
 ```
 or just download the 00014731.zip file
 
@@ -25,4 +25,4 @@ node app
 - pug
 
 #### Link to GitHub repo
-[url to the github repo]
+https://github.com/00014731/BlogApp.git
