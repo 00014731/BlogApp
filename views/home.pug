@@ -1,0 +1,55 @@
+extends layout.pug
+
+block number1
+  body
+    .container 
+      //- Top Menu & Menu button
+      .sidebar
+        .profile
+          h1.main BLOG APP 
+          h3.description Welcome to My Blog!
+          ul
+            li
+              a(href='#', class='active')
+                span.icon
+                  i.fas.fa-home
+                span.item Home
+            li
+              a(href='#')
+                span.icon
+                  i.fas.fa-user-profile
+                span.item My Profile
+            li
+              a(href='#')
+                span.item
+                  span.icon
+                    i.fas.fa-list 
+                  span.item Posts
+            li
+              a(href='#')
+                span.icon
+                  i.fas.fa-plus-square
+                span.item Add post
+            li
+              a(href='#')
+                span.icon
+                  i.fas.fa-cog
+                span.item Settings
+    .section
+      .top_navbar
+        .text This web application was created to fulfill Web Technology module’s requirements and does not represent an actual company or service.
+    form#new-post-form(method='post' action='/new')
+        h3 Add New Post
+        label(for='title') Title
+        input(type='text', name='title', required)
+        label(for='content') Content
+        textarea(name='content', rows='5', required)
+        button.btn.btn-primary(type='submit') Submit
+  
+
+    
+
+
+
+
+
